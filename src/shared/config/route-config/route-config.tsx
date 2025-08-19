@@ -1,6 +1,5 @@
 import {RouteProps} from 'react-router-dom';
-import {Main} from "pages/main";
-
+import {HistoryDatePage} from "pages";
 
 export enum AppRoutes {
     MAIN = 'main',
@@ -15,7 +14,7 @@ export const RoutePath: Record<AppRoutes, string> = {
 export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.MAIN]: {
         path: RoutePath.main,
-        element: <Main/>,
+        element: <HistoryDatePage/>,
     },
     [AppRoutes.NOT_FOUND]: {
         path: RoutePath.not_found,

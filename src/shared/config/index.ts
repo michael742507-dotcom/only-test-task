@@ -1,1 +1,1 @@
-export * from './routeConfig/routeConfig'
+export * from 'shared/config/route-config/route-config'
