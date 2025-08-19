@@ -25,11 +25,6 @@ export function BuildPlugins({
             __API__: JSON.stringify(apiUrl),
             __PROJECT__: JSON.stringify(project),
         }),
-        // new CopyPlugin({
-        //     patterns: [
-        //         {from: paths.locales, to: paths.buildLocales},
-        //     ],
-        // }),
 
         new ForkTsCheckerWebpackPlugin({
             typescript: {

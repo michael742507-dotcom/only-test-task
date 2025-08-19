@@ -1,15 +1,18 @@
 import React, {Suspense} from 'react';
 import {AppRouter} from 'app/providers/router';
+import {Layout} from "shared/ui";
+
+import './css/index.scss';
 
 function App() {
     return (
-        <div>
-            <Suspense fallback="">
-                <div className="content-page">
+        <main>
+            <Suspense fallback={<div>loading...</div>}>
+                <Layout>
                     <AppRouter/>
-                </div>
+                </Layout>
             </Suspense>
-        </div>
+        </main>
     );
 }
 
