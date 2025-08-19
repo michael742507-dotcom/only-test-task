@@ -6,13 +6,11 @@ import './css/index.scss';
 
 function App() {
     return (
-        <main>
-            <Suspense fallback={<div>loading...</div>}>
-                <Layout>
-                    <AppRouter/>
-                </Layout>
-            </Suspense>
-        </main>
+        <Suspense fallback={<div>loading...</div>}>
+            <Layout>
+                <AppRouter/>
+            </Layout>
+        </Suspense>
     );
 }
 
